@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Generador de PIN Versión 1.4 by Maverick. Copyright 2024&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Generador de PIN Versión 1.4 by Maverick. Copyright 2024&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="pinType"&gt;Tipo de Pin:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="pinType"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="salida"&gt;Salida&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="regreso"&gt;Regreso&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="date"&gt;Fecha:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="date" readonly /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="time"&gt;Hora (QTR):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="time" readonly /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Personas:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="names"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name1" value="Comisario Oropeza Cruz Fredy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name1"&gt;Comisario Oropeza Cruz Fredy&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name2" value="Subinspector Rivero Bautista Ricardo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name2"&gt;Subinspector Rivero Bautista Ricardo&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name3" value="Oficial Jiménez Rivera Sinuhé"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name3"&gt;Oficial Jiménez Rivera Sinuhé&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name4" value="Suboficial Sandoval Vázquez Alondra"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name4"&gt;Suboficial Sandoval Vázquez Alondra&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name5" value="Suboficial Vega Cardona Juan David"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name5"&gt;Suboficial Vega Cardona Juan David&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="name6" value="Suboficial García Alemán Celeste"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name6"&gt;Suboficial García Alemán Celeste&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Selecciona los Vehículos:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="vehicles"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle1" value="Explorer AG051A3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle1"&gt;Explorer AG051A3&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle2" value="Charger AG843A2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle2"&gt;Charger AG843A2&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle3" value="Charger AG845A2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle3"&gt;Charger AG845A2&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle4" value="Charger AG866A2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle4"&gt;Charger AG866A2&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle5" value="Charger AG898A2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle5"&gt;Charger AG898A2&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle6" value="Versa AG340A2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle6"&gt;Versa AG340A2&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle7" value="Hummer AG398A3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle7"&gt;Hummer AG398A3&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle8" value="Jeep AAA531A"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle8"&gt;Jeep AAA531A&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle9" value="Tacoma BM002AA"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle9"&gt;Tacoma BM002AA&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="vehicle10" value="Vehículo personal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="vehicle10"&gt;Vehículo personal&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Selecciona los Lugares:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="places"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place1" value="a abastecer combustible"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place1"&gt;a abastecer combustible&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place2" value="a traer alimentos para personal en turno"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place2"&gt;traer alimentos para el personal en turno&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place3" value="a realizar tomas con el dron"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place3"&gt;a realizar tomas con el dron&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place4" value="a realizar entrevista en campo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place4"&gt;a realizar entrevista en campo&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place5" value="a comisión"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place5"&gt;a comisión&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place6" value="a realizar investigación en campo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place6"&gt;a realizar investigación en campo&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place7" value="a la Fiscalia General de Aguascalientes a entregar documentación"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place7"&gt;a la Fiscalia General de Aguascalientes a entregar documentación&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place8" value="a revisar carpeta de investigación en el Centro de Justicia de la Mujer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place8"&gt;a revisar carpeta de investigación en el Centro de Justicia de la Mujer&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place9" value="a lavar la unidad en Autolavado"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place9"&gt;a lavar la unidad en Autolavado&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place10" value="a entregar documentación al Centro de Justicia de la Mujer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place10"&gt;a entregar documentación al Centro de Justicia de la Mujer&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place11" value="a entrevistarse con el Ministerio Público del Centro de Justicia de la Mujer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place11"&gt;a entrevistarse con el Ministerio Público del Centro de Justicia de la Mujer&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place12" value="a asunto personal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place12"&gt;a asunto personal&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="place13" value="a la Bodega de Indicios de la FGA a entregar un indicio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="place13"&gt;a la Bodega de Indicios de la FGA a entregar un indicio&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="otroLugar"&gt;Otro(a):&lt;/label&gt;</p>
+<p class="p1">&lt;input type="text" id="otroLugar" placeholder="Escribe un lugar adicional" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Oficial que Firma:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="signingOfficer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Comisario Oropeza Cruz Fredy"&gt;Comisario Oropeza Cruz Fredy&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Subinspector Rivero Bautista Ricardo"&gt;Subinspector Rivero Bautista Ricardo&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Oficial Jiménez Rivera Sinuhé"&gt;Suboficial Jiménez Rivera Sinuhé&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Suboficial Sandoval Vázquez Alondra"&gt;Suboficial Sandoval Vázquez Alondra&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Suboficial Vega Cardona Juan David"&gt;Suboficial Vega Cardona Juan David&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Suboficial García Alemán Celeste"&gt;Suboficial García Alemán Celeste&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="generatePinButton"&gt;Generar PIN&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="copyPinButton"&gt;Copiar PIN&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;PIN Generado:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;pre id="pinOutput"&gt;&lt;/pre&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
